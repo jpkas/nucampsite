@@ -4,6 +4,9 @@
   "description": "This is a website for the fictional campsites review site NuCamp.",
   "main": "index.html",
   "scripts": {
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "scss": "node-sass -o css/ css/",
     "lite": "lite-server",
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,6 +19,9 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1"
   }
 }
