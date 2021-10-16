@@ -4,10 +4,9 @@ $color-pale: #CEC8FF;
 $color-mid: #901CAD;
 $color-dark: #60106b;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
-
+$color-teal: #17a2b8;
 $body-font: "Open Sans", sans-serif;
 $header-font: "Lobster", cursive;
-
 
 body {
     font-family: $body-font;
@@ -19,10 +18,6 @@ h1, h2, h3 {
 
 h2 {
     color: $color-primary;
-}
-
-header h2 {
-    color: $color-pale;
 }
 
 .site-footer {
@@ -40,7 +35,6 @@ header h2 {
 .navbar {
     background-color: $color-mid;
 }
-
 .carousel {
     border: solid $color-secondary;
 }
@@ -52,4 +46,11 @@ header {
     h2 {
         color: $color-pale;
     }
+}   
+#reserveModal {
+    .modal-header {
+        background-color: $color-teal;
+        color: white;
+    } 
 }
+   

@@ -7,9 +7,6 @@ h1, h2, h3 {
 h2 {
   color: #3046C5; }
 
-header h2 {
-  color: #CEC8FF; }
-
 .site-footer {
   background-image: linear-gradient(#CEC8FF, white);
   padding: 20px 0; }
@@ -31,3 +28,7 @@ header h2 {
 
 header h2 {
   color: #CEC8FF; }
+
+#reserveModal .modal-header {
+  background-color: #17a2b8;
+  color: white; }
